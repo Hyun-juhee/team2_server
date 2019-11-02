@@ -11,5 +11,9 @@ module.exports = {
     NO_USER : "존재하지 않는 사용자 입니다.",
     NOT_CORRECT_PASSWORD : "비밀번호가 틀렸습니다.",
     SIGNIN_SUCCESS: "로그인 성공",
-    
+    DETAIL_READ_FAIL : "상세페이지 로드 실패",
+    DETAIL_READ_SUCCESS : "상세페이지 로드 성공",
+    NO_PARTY : "존재하지 않는 파티입니다.",
+    ENROLL_SUCCESS : "파티 등록 성공",
+    ENROLL_FAIL : "파티 등록 실패"
 };

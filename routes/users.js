@@ -17,14 +17,14 @@ user = {
     if(!userDB){
       return{
         code: statusCode.BAD_REQUEST,
-        json: utils.successFalse(responseMessage.SIGNUP_FAIL)
+        json: utils.successFalse(statusCode.BAD_REQUEST,responseMessage.SIGNUP_FAIL)
       };
     }
     else if(userDB.length > 0){
       return{
 
         code : statusCode.BAD_REQUEST,
-        json : utils.successFalse(responseMessage.ALREADY_EXIST_USER)
+        json : utils.successFalse(statusCode.BAD_REQUEST,responseMessage.ALREADY_EXIST_USER)
       }
     }
 
@@ -34,7 +34,7 @@ user = {
   
     return{
       code: statusCode.OK,
-      json: utils.successTrue(responseMessage.SIGNUP_SUCCESS)
+      json: utils.successTrue(statusCode.OK, responseMessage.SIGNUP_SUCCESS)
     }
   },
 
@@ -46,18 +46,18 @@ user = {
     if(!user){
       return{
         code: statusCode.BAD_REQUEST,
-        json: utils.successFalse(responseMessage.NO_USER)
+        json: utils.successFalse(statusCode.BAD_REQUEST, responseMessage.NO_USER)
       };
     }
     if(user.pwd != pwd){
       return{
         code : statusCode.BAD_REQUEST,
-        json : utils.successFalse(responseMessage.NOT_CORRECT_PASSWORD)
+        json : utils.successFalse(statusCode.BAD_REQUEST, responseMessage.NOT_CORRECT_PASSWORD)
       };
     }
     return{
       code : statusCode.OK,
-      json : utils.successTrue(responseMessage.SIGNIN_SUCCESS)
+      json : utils.successTrue(statusCode.OK, responseMessage.SIGNIN_SUCCESS)
     }
   }
 }

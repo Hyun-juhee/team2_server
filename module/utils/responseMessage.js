@@ -26,7 +26,11 @@ module.exports = {
 
     ALREADY_UNLIKE_PARTY: "이미 좋아요 취소된 파티",
     FAIL_UNLIKE_PARTY: "좋아요 취소 실패",
-    SUCCESS_UNLIKE_PARTY: "좋아요 취소 성공"
+    SUCCESS_UNLIKE_PARTY: "좋아요 취소 성공",
+
+    
+    ENROLL_SUCCESS : "파티 등록 성공",
+    ENROLL_FAIL : "파티 등록 실패"
     
 };
 

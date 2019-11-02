@@ -11,5 +11,8 @@ module.exports = {
     NO_USER : "존재하지 않는 사용자 입니다.",
     NOT_CORRECT_PASSWORD : "비밀번호가 틀렸습니다.",
     SIGNIN_SUCCESS: "로그인 성공",
+
+    SUCCESS_ORDER_LIKE : "인기순 조회 성공",
+    SUCCESS_ORDER_NEW: "최신순 조회 성공"
     
 };

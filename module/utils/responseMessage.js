@@ -13,6 +13,15 @@ module.exports = {
     SIGNIN_SUCCESS: "로그인 성공",
 
     SUCCESS_ORDER_LIKE : "인기순 조회 성공",
-    SUCCESS_ORDER_NEW: "최신순 조회 성공"
+    SUCCESS_ORDER_NEW: "최신순 조회 성공",
+
+    ALREADY_LIKE_PARTY: "이미 좋아요 된 파티",
+    FAIL_LIKE_PARTY: "좋아요 실패",
+    SUCCESS_LIKE_PARTY: "좋아요 성공",
+
+    ALREADY_UNLIKE_PARTY: "이미 좋아요 취소된 파티",
+    FAIL_UNLIKE_PARTY: "좋아요 취소 실패",
+    SUCCESS_UNLIKE_PARTY: "좋아요 취소 성공"
     
 };
+

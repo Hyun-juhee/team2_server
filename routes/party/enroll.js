@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 const moment = require('moment');
 
+const upload = require('../../config/multer');
+
 const pool = require('../../module/pool');
 const utils = require('../../module/utils/utils');
 const statusCode = require('../../module/utils/statusCode');
@@ -30,8 +32,9 @@ partyEnroll = { //creatAt,,?
     }
 }
 
-router.post('/',async(req,res)=>{
-    const {image, title, date, address, content, please, host} = req.body;
+router.post('/', upload.single('image'), async(req,res)=>{
+    const {title, date, address, content, please, host} = req.body;
+    const image = req.file.location;
     const createdAt = moment().format('YYYY-MM-DD HH:mm:ss');
     if(!image || !title || !date || !address || !content || !please || !host ||!createdAt){
         res.status(statusCode.BAD_REQUEST)

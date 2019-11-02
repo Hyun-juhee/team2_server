@@ -11,14 +11,11 @@ module.exports = {
     NO_USER : "존재하지 않는 사용자 입니다.",
     NOT_CORRECT_PASSWORD : "비밀번호가 틀렸습니다.",
     SIGNIN_SUCCESS: "로그인 성공",
-<<<<<<< HEAD
     DETAIL_READ_FAIL : "상세페이지 로드 실패",
     DETAIL_READ_SUCCESS : "상세페이지 로드 성공",
     NO_PARTY : "존재하지 않는 파티입니다.",
     ENROLL_SUCCESS : "파티 등록 성공",
-    ENROLL_FAIL : "파티 등록 실패"
-};
-=======
+    ENROLL_FAIL : "파티 등록 실패",
 
     SUCCESS_ORDER_LIKE : "인기순 조회 성공",
     SUCCESS_ORDER_NEW: "최신순 조회 성공",
@@ -33,4 +30,3 @@ module.exports = {
     
 };
 
->>>>>>> f83c97fc70e6914e4c5d6d3c2959b1b42ef9ad38
